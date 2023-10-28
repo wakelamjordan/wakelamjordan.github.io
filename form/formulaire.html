@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Site web de présentation de Wakelam jordan développeur web et web mobile, recherchant activement une entreprise de la région parisienne afin d'éffectuer une période de stage en entreprise du 11 avril au 24 juin 2024, formulaire de contacte.">
+    <title>Wakelam jordan, développeur web et web mobile, me contacter</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/page/index.html">Mon CV</a>
+                    <ul>
+                        <li><a class="moncv" href="/page/index.html#experience">Mes exp&eacute;riences professionelles</a></li>
+                        <li><a class="moncv" href="/page/index.html#diplomes">Mes diplomes de formations</a></li>
+                        <li><a class="moncv" href="/page/index.html#competence">Mes compétences</a></li>
+                        <li><a class="moncv" href="/page/index.html#centreInteret">Mes centres d'int&eacute;r&ecirc;ts</a></li>      
+                    </ul>
+                
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Pour me contacter, veuillez remplir ce formulaire. Tous les champs sont obligatoires.</h1>
+        <form id="frmcontact" action="mailto:jwakelams@gmail.com" method="post">
+            <label for="nom">Nom et prénom</label>
+            <input type="text" name="nom" id="nom" autofocus required>
+            <label for="mail">Votre adresse mail</label>
+            <input type="email" name="mail" id="mail" required>
+            <label for="msg">Votre message :</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+            <button type="submit">envoyer</button>
+        </form>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/jordan-wakelam-350a24241"><img src="/image/linkdin.jpg" alt="logo linkedin"></a>
+    </footer>
+</body>
+
+</html>

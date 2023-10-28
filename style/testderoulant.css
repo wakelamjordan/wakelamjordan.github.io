@@ -1,0 +1,7 @@
+/* navbarre */
+
+li{
+    background-color: brown;
+    display:inline-block;
+    vertical-align:top;
+}

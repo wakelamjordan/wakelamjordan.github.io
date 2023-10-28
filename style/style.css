@@ -1,0 +1,187 @@
+:root{
+    --couleurmenu:aqua;
+    --couleursub:#fff;
+}
+
+@font-face {
+    font-family: 'promptblack';
+    src: url('/media/font/prompt-black-webfont.woff2') format('woff2'),
+         url('/media/font/prompt-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'quicksandlight';
+    src: url("/media/font/quicksand-variablefont_wght-webfont.woff2") format('woff2'),
+         url("/media/font/quicksand-variablefont_wght-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* 
+*{
+    box-sizing:border-box;
+
+ 
+}
+
+body{
+    text-decoration:none;
+    font-family:'quicksandlight';
+    color:#111;
+    font-size: 16px;
+    line-height:20px;
+}
+
+a{
+    font-family:'quicksandlight';
+    text-decoration:none;
+    color:#111;
+
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+header{
+    border-bottom:1px solid #eee;
+}
+
+header li{
+    display: inline-block;
+    vertical-align: top;
+    position:relative;
+}
+
+header a{
+    display:block;
+    padding:20px;
+}
+
+header li:hover a{
+    background-color:blueviolet;
+    color:#fff
+}
+
+header li:hover .submenu{
+    display:block;
+}
+
+.submenu{
+    display:none;
+    background-color:#fff;
+    position:absolute;
+    width:400px;
+}
+
+.submenu li{
+    display:block;
+    background-color:blueviolet;
+}
+
+si je survole un li qui est à l'intérieur de mon submenu class
+
+.submenu li:hover a{
+    background-color:#fff;
+    color:blueviolet;
+}
+
+.submenu li:hover #moncv a{
+    background-color:blueviolet;
+    color:#fff;
+}
+main{
+    margin-top:200px;
+}
+
+@media screen and (max-width:260mm){
+faire nav pour mobile qui apparaitra et l'ancienne nav qui disparaitra
+
+} */
+/* *{
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background-color:#627a7e;
+}
+
+header{
+    margin-bottom:auto;
+    background-color:#a5aeaf;
+}
+
+footer{
+    background-color:#a5aeaf;
+} */
+
+/* --------------------------------- */
+/* taille des containeur = -marge et padding */
+*{
+    box-sizing:border-box;
+}
+/* .wrapper{
+    width: 1000px;
+    margin-left:30vw;
+} */
+/* les li deviennent de type inline, et son contenu type block */
+header li{
+    display:inline-block;
+    vertical-align:top;
+    /* background-color: aqua; */
+    position:relative;
+    /* padding: 10px; */
+}
+/* désafficher .submenu */
+.submenu{
+    display:none;
+}
+/* hover li =couleur de fond et déroulé sub */
+header li:hover{
+    background-color: var(--couleurmenu);
+}
+/* faire apparaitre submenu au passage de li donne couleur de fond par défault*/
+header li:hover .submenu{
+    display:block;
+    position:absolute;
+    background-color: var(--couleurmenu);
+}
+
+.submenu li:hover{
+    background-color:var(--couleursub);
+}
+
+li a{
+    display:block;
+    padding:10px;
+    width:fit-content;
+}
+
+/* mobile */
+@media screen and (max-width:768px){
+    body{
+        background-color: bisque;
+    }
+    .wrapper{
+        margin-left:7vh;
+    }
+}
+/* laptop */
+@media screen and (min-width:768px) {
+    body{
+        /* background-color:aquamarine; */
+        font-size: 1.3rem;
+    }
+    .wrapper{
+        margin-left:50vh;
+    }
+    
+}
