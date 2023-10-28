@@ -1,187 +1,131 @@
-:root{
-    --couleurmenu:aqua;
-    --couleursub:#fff;
-}
-
-@font-face {
-    font-family: 'promptblack';
-    src: url('/media/font/prompt-black-webfont.woff2') format('woff2'),
-         url('/media/font/prompt-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'quicksandlight';
-    src: url("/media/font/quicksand-variablefont_wght-webfont.woff2") format('woff2'),
-         url("/media/font/quicksand-variablefont_wght-webfont.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-/* 
 *{
-    box-sizing:border-box;
-
- 
+    box-sizing: border-box;
 }
+
+/* police */
+
+h1{
+    font-size:22px;
+    font-weight:bold;
+}
+
+h2{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+span{
+    font-style:italic;
+}
+
+/* taille d'images */
+
+img{
+    width:50px;
+}
+
+img[src*="html"]{
+    width:100px;
+}
+
+img[src*="css"]{
+    width:73px;
+}
+
+img[src*="java"]{
+    width:80px;
+}
+
+img[src*="php"]{
+    width:130px;
+}
+
+img[src*="mysql"]{
+    width:200px;
+}
+
+/* couleur de fond pour mieurx visualiser mes élémentes */
 
 body{
-    text-decoration:none;
-    font-family:'quicksandlight';
-    color:#111;
-    font-size: 16px;
-    line-height:20px;
-}
-
-a{
-    font-family:'quicksandlight';
-    text-decoration:none;
-    color:#111;
-
-}
-
-.wrapper{
-    margin: 0 auto;
-    width: 1000px;
-}
-
-header{
-    border-bottom:1px solid #eee;
-}
-
-header li{
-    display: inline-block;
-    vertical-align: top;
-    position:relative;
-}
-
-header a{
-    display:block;
-    padding:20px;
-}
-
-header li:hover a{
-    background-color:blueviolet;
-    color:#fff
-}
-
-header li:hover .submenu{
-    display:block;
-}
-
-.submenu{
-    display:none;
     background-color:#fff;
-    position:absolute;
-    width:400px;
-}
-
-.submenu li{
-    display:block;
-    background-color:blueviolet;
-}
-
-si je survole un li qui est à l'intérieur de mon submenu class
-
-.submenu li:hover a{
-    background-color:#fff;
-    color:blueviolet;
-}
-
-.submenu li:hover #moncv a{
-    background-color:blueviolet;
-    color:#fff;
-}
-main{
-    margin-top:200px;
-}
-
-@media screen and (max-width:260mm){
-faire nav pour mobile qui apparaitra et l'ancienne nav qui disparaitra
-
-} */
-/* *{
-    box-sizing:border-box;
-}
-
-body{
-    height:100vh;
     display:flex;
     flex-direction:column;
-    background-color:#627a7e;
+    justify-content:space-around;
 }
 
-header{
-    margin-bottom:auto;
-    background-color:#a5aeaf;
+/* video dimensionner à l'écran */
+
+video{
+    width:85vw;
 }
 
-footer{
-    background-color:#a5aeaf;
-} */
+/* centrage contenant */
 
-/* --------------------------------- */
-/* taille des containeur = -marge et padding */
-*{
-    box-sizing:border-box;
-}
-/* .wrapper{
-    width: 1000px;
-    margin-left:30vw;
-} */
-/* les li deviennent de type inline, et son contenu type block */
-header li{
-    display:inline-block;
-    vertical-align:top;
-    /* background-color: aqua; */
-    position:relative;
-    /* padding: 10px; */
-}
-/* désafficher .submenu */
-.submenu{
-    display:none;
-}
-/* hover li =couleur de fond et déroulé sub */
-header li:hover{
-    background-color: var(--couleurmenu);
-}
-/* faire apparaitre submenu au passage de li donne couleur de fond par défault*/
-header li:hover .submenu{
-    display:block;
-    position:absolute;
-    background-color: var(--couleurmenu);
+.centragex{
+    text-align:center;
+    margin-top:20px;
 }
 
-.submenu li:hover{
-    background-color:var(--couleursub);
+.centragey{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    margin-top: 0;
+    /* background-color:aqua; */
 }
 
-li a{
-    display:block;
+address{
+    /* background-color:bisque; */
+}
+
+/* mise en row menu */
+
+menu{
+    display:flex;
+}
+
+/* couleur de fond pour les section pour mieux les visualiser */
+
+section{
+    background-color:#888;
+    margin:20px 5px 20px 5px;
     padding:10px;
-    width:fit-content;
 }
 
-/* mobile */
-@media screen and (max-width:768px){
-    body{
-        background-color: bisque;
-    }
-    .wrapper{
-        margin-left:7vh;
-    }
+/* dans présentation côte à côte coordonées langue permis */
+
+.cac{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    /* align-items:center; */
+    /* background-color:blue; */
 }
-/* laptop */
-@media screen and (min-width:768px) {
-    body{
-        /* background-color:aquamarine; */
-        font-size: 1.3rem;
-    }
-    .wrapper{
-        margin-left:50vh;
-    }
-    
+
+.alignimg{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    /* background-color:blue; */
 }
+
+.alignimg li{
+    padding:40px;
+}
+/* espace entre les différentes sous sections */
+div, ul{
+    margin-top:20px;
+}
+
+dt{
+    margin-top:10px;
+}
+
+/* agencement 1ére section */
+
