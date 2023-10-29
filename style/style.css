@@ -1,3 +1,5 @@
+/* calcul padding ou margin ne se soustrai à taille container */
+
 *{
     box-sizing: border-box;
 }
@@ -13,9 +15,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'quicksandlight';
     src: url('/media/font/quicksand-variablefont_wght-webfont.woff2') format('woff2'),
@@ -25,45 +24,216 @@
 
 }
 
-
-
-h1,h2,h3{
-    color:black; 
-    font-family: 'promptblack';
-}
-
-h1{
-    font-size:30px;
-    /* font-weight:bold; */
-    /* padding:10px; */
-}
-
-h2{
-    font-size:23px;
-    font-weight:bold;
-}
-
 .bold{
     font-weight:bold;
 }
 
-/* mise en italic */
+h1, h2{
+    font-weight: bold;
+    padding:10px;
+}
+
+body{
+    font-size: 1.5rem;
+}
+
+#title{
+    font-size:3.5rem;
+    /* font-size: calc(100% - 1px); */
+
+}
+
 span:not(.h3){
     font-style:italic;
-    /* padding:20px 0 20px 0; */
-    margin:10px 0 10px 0;
-    /* background-color:aqua; */
+    padding:10px 0 10px 0;
+    font-weight: 100;
 }
 
 .h3{
-    font-size:18px;
     font-weight:bold;
 }
 
 dt{
-    color:#290e0e;
+    padding:10px 0 10px 0;
 }
 
+
+
+/* -------------------------header */
+
+/* centrage video x */
+
+.centragex{
+    text-align:center;
+}
+
+video{
+    width:85vw;
+}
+
+/* mise en row menu */
+
+menu{
+    display:flex;
+}
+
+/* -----------------------------body */
+
+/* centrage lien */
+
+.liencentre{
+    text-align:center;
+}
+
+/* padding des container */
+
+body{
+    background-color:#3a3a3a;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    font-family: 'quicksandlight';
+
+    max-width:80%;
+
+    margin:0 auto 0 auto;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+section{
+    padding:20px;
+
+    margin:20px;
+
+    width:100%;
+}
+
+/* présentation */
+
+.soussection{
+    background-color:rgb(255, 255, 255);
+
+    padding:10px;
+    margin:10px;
+
+    border-radius:15px;
+}
+
+/* contenu des sous sections */
+
+/* mise cac des éléments de la présentation */
+
+.cac{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    /* flex-wrap:wrap; */
+    height:fit-content;
+    /* align-items:stretch; */
+}
+
+.div1{
+    /* background-color:aqua; */
+
+    max-width:60%;
+    height:fit-content;
+    /* align-self: stretch; */
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    /* align-items: stretch; */
+    flex-grow: 1;
+
+}
+
+.div2{
+    /* background-color:bisque; */
+    height:fit-content;
+    /* width:fit-content; */
+    flex-grow: 1;
+
+    display:flex;
+    
+}
+
+p{
+    /* background-color:#3a3a3a; */
+    /* height:70%; */
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+#presentation{
+    font-size: calc(100% - 1px);
+}
+
+div{
+    padding:10px;
+}
+
+@media (max-width:700px){
+
+    body{
+        background-color:aqua;
+    }
+
+    /* cac passage en flex-wrap: ; */
+
+    .cac{
+        flex-wrap:wrap;
+    }
+
+    /* adaptation de la taille des caractéres */
+  
+    body{
+        font-size: 1rem;
+        max-width: 95%;
+    }
+
+    /* passage de la partie permis etc dans présentation en colonne */
+
+    .div2{
+        flex-direction:column;
+    }
+
+    .div1{
+        max-width:100%;
+    }
+
+    section{
+        width:100%;
+    }
+
+    section{
+        padding:0px;
+    
+        margin:20px;
+    }
+    
+    
+    
+    #title{
+        font-size:1.5rem;
+        /* font-size: calc(100% - 1px); */
+    
+    }
+
+}
+
+/* info permis langue centrage contenant */
+
+.centragey{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
 
 /* taille d'images */
 
@@ -91,171 +261,40 @@ img[src*="mysql"]{
     width:200px;
 }
 
-/* couleur de fond pour mieurx visualiser mes élémentes */
+/* alignement des image et enroulement pour les petits écrans */
 
-body{
+.alignimg{
+    display:flex;
+    /* align-items:flex-start; */
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    /* padding:50px; */
+}
+
+ul{
     background-color:#3a3a3a;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    font-family: 'quicksandlight';
 }
 
-/* video dimensionner à l'écran */
-
-video{
-    width:85vw;
-}
-
-/* centrage contenant */
-
-.centragex{
-    text-align:center;
-    margin-top:20px;
-}
-
-.centragey{
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-    margin-top: 0;
-    /* background-color:aqua; */
-}
-
-address{
-    /* background-color:bisque; */
-}
-
-/* mise en row menu */
-
-menu{
-    display:flex;
-}
-
-main{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
+.alignimg li{
+    border:solid;
+    height:100%;
+    /* text-align: center; */
 }
 
 /* couleur de fond pour les section pour mieux les visualiser */
 
 section{
     background-color:#c5bebe;
-    margin:20px 5px 20px 5px;
-    padding:10px;
 }
 
 /* fond pour les div soussection */
 
-.soussection{
-    background-color:rgb(255, 255, 255);
-    padding:10px
-}
 
-section, .soussection{
-    border-radius:15px;
-}
 
-/* dans présentation côte à côte coordonées langue permis */
 
-.cac{
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-around;
-    /* align-items:center; */
-    /* background-color:blue; */
-}
 
-.alignimg{
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-around;
-    align-items:center;
-    flex-wrap: wrap;
-    /* background-color:blue; */
-}
 
-.alignimg li{
-    padding:40px;
-}
-/* espace entre les différentes sous sections */
-div, ul{
-    margin-top:20px;
-}
 
-dt{
-    margin:20px 0 10px 0;
-    text-height:50px;
-}
 
-li{
-    margin:10px 0 10px 0;
-}
 
-/* centrage lien */
-
-.liencentre{
-    text-align:center;
-    margin:10px 0 10px 0;
-}
-
-@media (min-width:500px){
-    body{
-        /* background-color:aquamarine; */
-    }
-
-    .text{
-        width:auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        /* background-color:#290e0e; */
-        margin:0;
-    }
-    /* hauteur de la zone de texte de présentation */
-    .text p{
-        
-        font-size:25px
-    }
-
-    /* zone des coordonnées */
-    .info{
-        width:30%;
-        height:auto;
-        margin:0;
-    }
-
-    div{
-        padding:10px;
-    }
-
-    address div, .info .centragey{
-        padding:0;
-    }
-
-    .laptop{
-        margin:0;
-        height:100%;
-        display:flex;
-    }
-
-    h1{
-        font-size:35px;
-        height:100%;
-        /* margin-top:auto;
-        margin-bottom:auto; */
-        display:flex;
-        align-items:center;
-        padding-bottom: 20px;
-    }
-
-    section{
-        width:60%;
-    }
-
-}
-
-section{
-    /* padding:20px; */
-}
