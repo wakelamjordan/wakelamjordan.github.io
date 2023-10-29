@@ -4,13 +4,42 @@
 
 /* police */
 
+@font-face {
+    font-family: 'promptblack';
+    src: url('/media/font/prompt-black-webfont.woff2') format('woff2'),
+         url('/media/font/prompt-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('/media/font/quicksand-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/media/font/quicksand-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+h1,h2,h3{
+    color:black; 
+    font-family: 'promptblack';
+}
+
 h1{
-    font-size:22px;
-    font-weight:bold;
+    font-size:30px;
+    /* font-weight:bold; */
+    /* padding:10px; */
 }
 
 h2{
-    font-size:20px;
+    font-size:23px;
     font-weight:bold;
 }
 
@@ -18,9 +47,23 @@ h2{
     font-weight:bold;
 }
 
-span{
+/* mise en italic */
+span:not(.h3){
     font-style:italic;
+    /* padding:20px 0 20px 0; */
+    margin:10px 0 10px 0;
+    /* background-color:aqua; */
 }
+
+.h3{
+    font-size:18px;
+    font-weight:bold;
+}
+
+dt{
+    color:#290e0e;
+}
+
 
 /* taille d'images */
 
@@ -51,10 +94,11 @@ img[src*="mysql"]{
 /* couleur de fond pour mieurx visualiser mes élémentes */
 
 body{
-    background-color:#fff;
+    background-color:#3a3a3a;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
+    font-family: 'quicksandlight';
 }
 
 /* video dimensionner à l'écran */
@@ -88,12 +132,29 @@ menu{
     display:flex;
 }
 
+main{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
 /* couleur de fond pour les section pour mieux les visualiser */
 
 section{
-    background-color:#888;
+    background-color:#c5bebe;
     margin:20px 5px 20px 5px;
     padding:10px;
+}
+
+/* fond pour les div soussection */
+
+.soussection{
+    background-color:rgb(255, 255, 255);
+    padding:10px
+}
+
+section, .soussection{
+    border-radius:15px;
 }
 
 /* dans présentation côte à côte coordonées langue permis */
@@ -124,8 +185,77 @@ div, ul{
 }
 
 dt{
-    margin-top:10px;
+    margin:20px 0 10px 0;
+    text-height:50px;
 }
 
-/* agencement 1ére section */
+li{
+    margin:10px 0 10px 0;
+}
 
+/* centrage lien */
+
+.liencentre{
+    text-align:center;
+    margin:10px 0 10px 0;
+}
+
+@media (min-width:500px){
+    body{
+        /* background-color:aquamarine; */
+    }
+
+    .text{
+        width:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        /* background-color:#290e0e; */
+        margin:0;
+    }
+    /* hauteur de la zone de texte de présentation */
+    .text p{
+        
+        font-size:25px
+    }
+
+    /* zone des coordonnées */
+    .info{
+        width:30%;
+        height:auto;
+        margin:0;
+    }
+
+    div{
+        padding:10px;
+    }
+
+    address div, .info .centragey{
+        padding:0;
+    }
+
+    .laptop{
+        margin:0;
+        height:100%;
+        display:flex;
+    }
+
+    h1{
+        font-size:35px;
+        height:100%;
+        /* margin-top:auto;
+        margin-bottom:auto; */
+        display:flex;
+        align-items:center;
+        padding-bottom: 20px;
+    }
+
+    section{
+        width:60%;
+    }
+
+}
+
+section{
+    /* padding:20px; */
+}
