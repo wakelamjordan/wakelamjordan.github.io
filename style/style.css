@@ -1,300 +1,168 @@
-/* calcul padding ou margin ne se soustrai à taille container */
+@font-face {
+    font-family: "poiret";
+    src: url(/media/font/poiret/poiretone-regular-webfont.woff) format("woff"),
+        url(/media/font/poiret/poiretone-regular-webfont.woff2) format("woff2"),
+        url(/media/font/poiret/PoiretOne-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
-*{
+:root {
+    box-sizing: inherit;
+    --colo2: rgb(45, 45, 45);
+    --coloclick: #fff;
+}
+
+
+* {
     box-sizing: border-box;
 }
 
-/* police */
-
-@font-face {
-    font-family: 'promptblack';
-    src: url('/media/font/prompt-black-webfont.woff2') format('woff2'),
-         url('/media/font/prompt-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+body,
+body a {
+    font-family: "poiret", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
 }
 
-@font-face {
-    font-family: 'quicksandlight';
-    src: url('/media/font/quicksand-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/media/font/quicksand-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+span {
+    font-style: italic;
+    font-size: 0.6em;
 }
 
-.bold{
-    font-weight:bold;
+/* suppression des formatages */
+ul,
+li,
+a,
+menu,
+dl,
+dt,
+dd {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2{
+/* réduction images pour travailler */
+
+/* cacher les éléments .accessibility */
+.accessibility {
+    position: absolute;
+    right: 3000px;
+}
+
+body {
+    background-color: rgb(153, 180, 171);
+    /* width: 100vw; */
+}
+
+/* header-- */
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    width: 40vw;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+menu {
+    background-color: var(--colo2);
+    border-radius: 15px;
+}
+
+menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+
+    color: var(--coloclick);
+    font-weight: bolder;
+}
+
+
+/* body-- */
+main h1 {
+    text-align: center;
+    font-size: 2.3em;
+}
+
+#divmain {
+    display: grid;
+    gap: 20px;
+}
+
+h1 {
     font-weight: bold;
-    padding:10px;
 }
 
-body{
-    font-size: 1.5rem;
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 0 20px 20px;
+    margin: 0 10px;
+    border-radius: 15px;
 }
 
-#title{
-    font-size:3.5rem;
-    /* font-size: calc(100% - 1px); */
-
+/* liens clickables-- */
+.click {
+    background-color: var(--colo2);
+    /* display: inline; */
+    width: fit-content;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 10px auto;
 }
 
-span:not(.h3){
-    font-style:italic;
-    padding:10px 0 10px 0;
-    font-weight: 100;
+.click a {
+    color: var(--coloclick);
+    font-weight: bolder;
 }
 
-.h3{
-    font-weight:bold;
+address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-style: normal;
 }
 
-dt{
-    padding:10px 0 10px 0;
+address span {
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: normal;
 }
 
-
-
-/* -------------------------header */
-
-/* centrage video x */
-
-.centragex{
-    text-align:center;
+#competence ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-video{
-    width:85vw;
+#competence li {
+    padding: 10px;
 }
 
-/* mise en row menu */
-
-menu{
-    display:flex;
+#competence img {
+    height: 20vw;
 }
 
-/* -----------------------------body */
-
-/* centrage lien */
-
-.liencentre{
-    text-align:center;
+#centreint img {
+    width: 10vw;
 }
 
-/* padding des container */
-
-body{
-    background-color:#3a3a3a;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    font-family: 'quicksandlight';
-
-    max-width:80%;
-
-    margin:0 auto 0 auto;
+#centreint ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-main{
-    display:flex;
-    flex-direction:column;
+.cac {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-section{
-    padding:20px;
-
-    margin:20px;
-
-    width:100%;
+menu :hover {
+    box-shadow:0 0 20px #fff;
 }
-
-/* présentation */
-
-.soussection{
-    background-color:rgb(255, 255, 255);
-
-    padding:10px;
-    margin:10px;
-
-    border-radius:15px;
-}
-
-/* contenu des sous sections */
-
-/* mise cac des éléments de la présentation */
-
-.cac{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    /* flex-wrap:wrap; */
-    height:fit-content;
-    /* align-items:stretch; */
-}
-
-.div1{
-    /* background-color:aqua; */
-
-    max-width:60%;
-    height:fit-content;
-    /* align-self: stretch; */
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    /* align-items: stretch; */
-    flex-grow: 1;
-
-}
-
-.div2{
-    /* background-color:bisque; */
-    height:fit-content;
-    /* width:fit-content; */
-    flex-grow: 1;
-
-    display:flex;
-    
-}
-
-p{
-    /* background-color:#3a3a3a; */
-    /* height:70%; */
-    display:flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-}
-
-#presentation{
-    font-size: calc(100% - 1px);
-}
-
-div{
-    padding:10px;
-}
-
-@media (max-width:700px){
-
-    body{
-        background-color:aqua;
-    }
-
-    /* cac passage en flex-wrap: ; */
-
-    .cac{
-        flex-wrap:wrap;
-    }
-
-    /* adaptation de la taille des caractéres */
-  
-    body{
-        font-size: 1rem;
-        max-width: 95%;
-    }
-
-    /* passage de la partie permis etc dans présentation en colonne */
-
-    .div2{
-        flex-direction:column;
-    }
-
-    .div1{
-        max-width:100%;
-    }
-
-    section{
-        width:100%;
-    }
-
-    section{
-        padding:0px;
-    
-        margin:20px;
-    }
-    
-    
-    
-    #title{
-        font-size:1.5rem;
-        /* font-size: calc(100% - 1px); */
-    
-    }
-
-}
-
-/* info permis langue centrage contenant */
-
-.centragey{
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-}
-
-/* taille d'images */
-
-img{
-    height:50px;
-}
-
-/* img[src*="html"]{
-    width:100px;
-}
-
-img[src*="css"]{
-    width:73px;
-}
-
-img[src*="java"]{
-    width:80px;
-}
-
-img[src*="php"]{
-    width:130px;
-}
-
-img[src*="mysql"]{
-    width:200px;
-} */
-
-/* alignement des image et enroulement pour les petits écrans */
-
-.alignimg{
-    display:flex;
-    /* align-items:flex-start; */
-    justify-content:space-evenly;
-    align-items:center;
-    flex-wrap: wrap;
-    /* padding:50px; */
-}
-
-ul{
-    background-color:#3a3a3a;
-}
-
-.alignimg li{
-    border:solid;
-    height:100%;
-    /* text-align: center; */
-}
-
-/* couleur de fond pour les section pour mieux les visualiser */
-
-section{
-    background-color:#c5bebe;
-}
-
-/* fond pour les div soussection */
-
-
-
-
-
-
-
-
-

@@ -1,236 +1,200 @@
 <!DOCTYPE html>
+
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="description de la page">
+    <meta name="description" content="description de ma page">
 
-    <title>Page de base</title>
-    <!-- reset des mep de navigateurs -->
-    <link rel="stylesheet" href="/style/reset.css" type="text/css">
-    <!-- ma feuille de style -->
-    <link rel="stylesheet" href="/style/style.css" type="text/css">
+    <title>Titre de ma page</title>
+
+    <link rel="stylesheet" href="/style/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/style/style.css">
 
 </head>
-    <body>
 
-        <header>
-            <nav>
-                <div class="centragex">
-                    <video src="/media/presentation.mp4" controls title="Vid&eacute;o de pr&eacute;sentation de Wakelam jordan"><img src="/image/wakelamJordan.jpg" alt="Photo de wakelamjordan"></video>
-                </div>
-                <menu>
-                    <li>
-                        <a href="#">lien1</a>
-                        <menu>
-                            <li><a href="#">sub1</a></li>
-                            <li><a href="#">sub2</a></li>
-                            <li><a href="#">sub3</a></li>
-                        </menu>
-                    </li>
-                    <li><a href="#">lien2</a></li>
-                    <li><a href="#">lien3</a></li>
-                </menu>
-            </nav>
-        </header>
+<body>
 
-        <main>
-            <!-- présentation -->
-            <section class="cac">
-                    <!-- texte de présentation -->
+    <header>
+        <a href="#main" class="accessibility">nom de la page, sauter le menu</a>
 
-                <div class="div1 soussection">
+        <div id="logo"><a href="/index.html"><img src="/image/wakelamJordan.jpg" alt="photo de wakelam jordan"></a></div>
+
+        <nav>
+            <menu>
+                <!-- <li><a href="/experience.html">Exp&eacute;riences</a></li> -->
+                <li><a href="/contact.html">Me contacter</a></li>
+            </menu>
+        </nav>
+
+    </header>
+
+    <main id="main">
+        <h1>D&eacute;veloppeur Web <br>&amp;<br> Web mobile<br><span>en formation</span></h1>
+        <div id="divmain">
+            <!-- présentation -->    
+            <section>
+
+                <h2>Wakelam Jordan</h2>
+
+                <p>Organis&eacute;, pers&eacute;v&eacute;rant et calme
+                    Ayant servi dans l’arm&eacute;e durant pr&egrave;s de 12 ans je me lance aujourd’hui
+                    dans une toute autre aventure, celle de ma reconversion.<br>
+                    D’un naturel curieux et d&eacute;termin&eacute;, je compte mettre mes savoir-&ecirc;tre
+                    acquis, au service de mon apprentissage et ainsi atteindre mon objectif,
+                    pouvoir m’&eacute;panouir dans les m&eacute;tiers du Web.
+                </p>
 
 
-                    <h1 id="title">M.WAKELAM Jordan</h1>
-                    <p id="presentation">
-                        <span>
-                            Organis&eacute;, pers&eacute;v&eacute;rant et calme
-                        </span>
-                        <br>
-                        Ayant servi dans l’arm&eacute;e durant pr&egrave;s de 12 ans je me lance aujourd’hui
-                        dans une toute autre aventure, celle de ma reconversion.
-                        <br>
-                        D’un naturel curieux et d&eacute;termin&eacute;, je compte mettre mes savoir-être acquis, au service de mon apprentissage et ainsi atteindre mon objectif, pouvoir m’&eacute;panouir dans les m&eacute;tiers du Web.
-                    </p>
-
-                </div>
-
-                <div class="div2 soussection">
-
-                    <!-- coordonnées-->
-                    <address>
-
-                        <div class="bold">Adresse</div>
-                        91 740 Pussay                 
-                        <div class="bold">Portable</div>
-                        06 41 16 23 13
-                        <div class="bold">E-mail</div>
-                        <a href="mailto:jwakelams@gmail.com">jwakelams@gmail.com</a>
-
-                    </address>
-
-                    <!-- langue permis etc -->
+                <address>
                     <div>
-
-                        <div class="bold">Langue</div>
-                        Anglais A2
-                        <div class="bold">Permis</div>
-                        B v&eacute;hicul&eacute;
-                        <br>
-                        C
-
+                        <span>Adresse</span><br>91 740 Pussay
                     </div>
+                    <div>
+                        <span>Portable</span><br>06 41 16 23 13
+                    </div>
+                    <div>
+                        <span>E-mail</span><br><a href="mailto:jwakelams@gmail.com">jwakelams@gmail.com</a>
+                    </div>
+                    <div>
+                        <span>Langue</span><br>Anglais A2
+                    </div>
+                    <div>
+                        <span>Permis</span><br>B v&eacute;hicul&eacute;<br>C
+                    </div>
+                </address>
+            </section>
+            <section id="competence">
+                <h2>Comp&eacute;tences<br><span>en cours d'apprentissage</span>
+                </h2>
 
+                <ul>
+                    <li><a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank"><img src="/image/html.svg"
+                                alt="Logo html5"></a></li>
+
+                    <li><a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img src="/image/javascript.svg"
+                    alt="Logo javascript"></a></li>
+
+                    
+                    <li><a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img
+                                src="/image/css.svg" alt="Logo css3"></a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"><img src="/image/php.svg"
+                                alt="Logo php"></a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank"><img
+                                src="/image/mysql.svg" alt="Logo sql"></a></li>
+                </ul>
+            </section>
+            <!-- expériences -->
+            <section>
+                <h2>Exp&eacute;rience professionnelles</h2>
+
+                <div>
+                    <h3>2012-2023</h3>
+
+                    <dl>
+                        <dt>Minist&egrave;re des Arm&eacute;es-Arm&eacute; de terre</dt>
+                        <dd>Adjoint &agrave; la planification des v&eacute;hicules et du mat&eacute;riel sensible au niveau
+                            r&eacute;gimentaire.</dd>
+                        <dd>Chef de groupe.</dd>
+                        <dd>Encadrement et formation de personnels militaires.</dd>
+                        <dd>Op&eacute;rations int&eacute;rieurs.</dd>
+                        <dd>Op&eacute;rations ext&eacute;rieurs.</dd>
+                        <dd class="click"><a href="#">En savoir plus</a></dd>
+                    </dl>
                 </div>
 
+                <div>
+                    <h3>2010-2012</h3>
+
+                    <dl>
+                        <dt>Roger-Albert, But, Carrefour</dt>
+                        <dd>Accueille client&egrave;le.</dd>
+                        <dd>Vendeur.</dd>
+                        <dd class="click"><a href="#">En savoir plus</a></dd>
+                    </dl>
+                </div>
             </section>
-
-            <!-- compétences -->
+            <!-- diplomes -->
             <section>
+                <h2>Diplomes et formations</h2>
 
-                    <h1>Comp&eacute;tences<br><span>en cours d'aquisition</span></h1>
 
-                <ul class="alignimg soussection">
-                    <li><a href="https://fr.wikipedia.org/wiki/HTML5" target="_blank"><img src="/image/html.svg" alt="Logo html5"></a></li>
-                    <li><a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img src="/image/css.svg" alt="Logo css3"></a></li>
-                    <li><a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img src="/image/javascript.svg" alt="Logo javascript"></a></li>
-                    <li><a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"><img src="/image/php.svg" alt="Logo php"></a></li>
-                    <li><a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank"><img src="/image/mysql.svg" alt="Logo sql"></a></li>
-                </ul>
+                <div>
+                    <h3>2023-2024</h3>
+
+                    <dl>
+                        <dt>Titre professionnel domaine d&eacute;veloppement
+                            Web et Web mobile de niveau 5 (en cours)
+                        </dt>
+                        <dd class="click"><a href="#">En savoir plus</a></dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <h3>2018</h3>
+
+                    <dl>
+                        <dt>Brevet de Sp&eacute;cialiste de l'Arm&eacute;e de terre</dt>
+                        <dd class="click"><a href="#">En savoir plus</a></dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <h3>2010</h3>
+
+                    <dl>
+                        <dt>Remise &agrave; niveau Art appliqu&eacute;
+                        </dt>
+                        <dd>Arr&ecirc;t en cours de formation.
+                        </dd>
+                        <dd class="click"><a href="#">En savoir plus</a></dd>
+                    </dl>
+                </div>
                 
+                <div>
+                    <h3>2009</h3>
+
+                    <dl>
+                        <dt>BAC Science Technologie de la Gestion
+                            Gestion de Syst&egrave;me d’Informations</dt>
+                        <dd class="click"><a href="#">En savoir plus</a></dd>
+                    </dl>
+                </div>
             </section>
-            <!-- expérience professionelles -->
-            <section>
-                    <h1>Exp&eacute;rience professionnelles</h1>
-                <div class="soussection">
-                    <!-- périodes -->
-                    <h2>2012-2023</h2>
-                    <dl>
-                        <dt>
-                            <span class="h3">Minist&egrave;re des Arm&eacute;e-Arm&eacute;e de terre</span>
-                        </dt>
-                        <dd>
-                            <dl>
-                                <dt>
-                                    <ul>
-                                        <li>Adjoint &agrave; la planification et du mat&eacute;riel.</li>
-                                        <li>Chef de groupe.</li>
-                                        <li>Encadrement et formation de personnels militaires.</li>
-                                    </ul>
-                                </dt>
-                                <dd>Montlh&eacute;ry (91)</dd>
-                                <dt>Op&eacute;rations int&eacute;rieures.</dt>
-                                <dd>Ile de France</dd>
-                                <dt>Op&eacute;rations ext&eacute;rieures.</dt>
-                                <dd>Mali, Centre Afrique, C&ocirc;te d'Ivoire</dd>
-                            </dl>
-                        </dd>
-                        <dd class="liencentre">                    
-                            <a href="#">en savoir plus</a>
-                        </dd>
-                    </dl>
-                </div>
+            <!-- compétences -->
+            <!-- centre d'intérêts -->
+            <section id="centreint">
+                <h2>Centres d'int&eacute;r&ecirc;ts</h2>
 
-                <div class="soussection">
-                    <!-- périodes -->
-                    <h2>2010-2012</h2>
-                    <dl>
-                        <dt>
-                            <span class="h3">Roger-Albert, But, Carrefour</span>
-                        </dt>
-                        <dd>
-                            <dl>
-                                <dt>
-                                    <ul>
-                                        <li>Accueille client&egrave;le.</li>
-                                        <li>Vendeur.</li>
-                                    </ul>
-                                </dt>
-                                <dd>Martinique (972)</dd>
-                            </dl>
-                        </dd>
-                        <dd class="liencentre">                    
-                            <a href="#">en savoir plus</a>
-                        </dd>
-                    </dl>
-                </div>
+                <ul>
+                    <li>Bricolage et r&eacute;paration
+                        d’appareils &eacute;lectroniques.</li>
 
-            </section>
-
-            <!-- diplomes et formations -->
-            <section>
-                    <h1>Diplomes et formations</h1>
-                <div class="soussection">
-                    <h2>2023-2024</h2>
-                    <dl>
-                        <dt>
-                            <span class="h3">Titre professionnel de niveau 5</span><br><span>domaine d&eacute;veloppement Web et Web mobile (en cours)</span>
-                        </dt>
-                        <dd>Fontenay le comte (82)</dd>
-                        <dd class="liencentre"><a href="/media/Developpeur.pdf" target="_blank">en savoir plus</a></dd>
-                    </dl>
-                </div>
-
-                <div class="soussection">
-                    <h2>2018</h2>
-                    <dl>
-                        <dt>
-                            <span class="h3">Brevet de Sp&eacute;cialiste de l'Arm&eacute;e de terre</span>
-                        </dt>
-                        <dd>Saint maixent l'&eacute;cole (85)</dd>
-                        <dd class="liencentre"><a href="#">en savoir plus</a></dd>
-                    </dl>
-                </div>
-
-                <div class="soussection">
-                    <h2>2010</h2>
-                    <dl>
-                        <dt>
-                            <span class="h3">Remise &agrave; niveau Art appliqu&eacute;</span><br><span>(non termin&eacute;e)</span>
-                        </dt>
-                        <dd>N&icirc;mes (30)</dd>
-                        <dd class="liencentre"><a href="#">en savoir plus</a></dd>
-                    </dl>
-                </div>
-                     
-                <div class="soussection">
-                    <h2>2009</h2>
-                    <dl>
-                        <dt>
-                            <span class="h3">Baccalaur&eacute;at</span><br><span>Science Technologie de la Gestion, Gestion de Syst&egrave;me d'Informations</span>
-                        </dt>
-                        <dd>Fort de France (972)</dd>
-                        <dd class="liencentre"><a href="#">en savoir plus</a></dd>
-                    </dl>
-                </div>
-
-            </section>
-
-            <!-- centre d'intêrets -->
-            <section>
-
-                <h1>Centre d'int&eacute;r&ecirc;ts</h1>
-                <ul class="soussection">
-                    <li>
-                        Bricolage et r&eacute;paration d'appareils &eacute;lectroniques.
+                    <li class="cac">Le dessin sur support
+                        traditionnel ou num&eacute;rique
+                        (tablette graphique).<div><a href="https://fr.wikipedia.org/wiki/Krita" target="_blank"><img src="/image/krita.png"
+                            alt="logo krita"></a></div>
                     </li>
-                    <li>
-                        Le dessin sur support traditionnel ou num&eacute;rique (tablette graphique). <a href="https://fr.wikipedia.org/wiki/Krita" target="_blank"><img src="/image/krita.png" alt="logo krita"></a>
-                    </li>
-                    <li>
-                        L'animation japonaise.
+
+                    <li>L'animation japonaise.
                     </li>
                 </ul>
 
             </section>
-        </main>
-        
-        <footer>
-            <a href="https://www.linkedin.com/in/jordan-wakelam-350a24241"><img src="/image/linkdin.jpg" alt="logo linkedin"></a>
-            <a href="#">Me contacter et t&eacute;l&eacute;charger mon CV</a>
-        </footer>
-            
-    </body>
+        </div>
+    </main>
+
+    <footer>
+
+        <a href="https://www.linkedin.com/in/jordan-wakelam-350a24241"><img src="/image/linkdin.jpg"
+                alt="logo linkedin"></a>
+        <a href="/contacte.html">Me contacter et t&eacute;l&eacute;charger mon CV</a>
+
+    </footer>
+
+</body>
+
 </html>

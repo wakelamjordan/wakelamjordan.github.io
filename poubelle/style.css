@@ -1,0 +1,300 @@
+/* calcul padding ou margin ne se soustrai à taille container */
+
+*{
+    box-sizing: border-box;
+}
+
+/* police */
+
+@font-face {
+    font-family: 'promptblack';
+    src: url('/media/font/prompt-black-webfont.woff2') format('woff2'),
+         url('/media/font/prompt-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('/media/font/quicksand-variablefont_wght-webfont.woff2') format('woff2'),
+         url('/media/font/quicksand-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.bold{
+    font-weight:bold;
+}
+
+h1, h2{
+    font-weight: bold;
+    padding:10px;
+}
+
+body{
+    font-size: 1.5rem;
+}
+
+#title{
+    font-size:3.5rem;
+    /* font-size: calc(100% - 1px); */
+
+}
+
+span:not(.h3){
+    font-style:italic;
+    padding:10px 0 10px 0;
+    font-weight: 100;
+}
+
+.h3{
+    font-weight:bold;
+}
+
+dt{
+    padding:10px 0 10px 0;
+}
+
+
+
+/* -------------------------header */
+
+/* centrage video x */
+
+.centragex{
+    text-align:center;
+}
+
+video{
+    width:85vw;
+}
+
+/* mise en row menu */
+
+menu{
+    display:flex;
+}
+
+/* -----------------------------body */
+
+/* centrage lien */
+
+.liencentre{
+    text-align:center;
+}
+
+/* padding des container */
+
+body{
+    background-color:#3a3a3a;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    font-family: 'quicksandlight';
+
+    max-width:80%;
+
+    margin:0 auto 0 auto;
+}
+
+main{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+section{
+    padding:20px;
+
+    margin:20px;
+
+    width:100%;
+}
+
+/* présentation */
+
+.soussection{
+    background-color:rgb(255, 255, 255);
+
+    padding:10px;
+    margin:10px;
+
+    border-radius:15px;
+}
+
+/* contenu des sous sections */
+
+/* mise cac des éléments de la présentation */
+
+.cac{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    /* flex-wrap:wrap; */
+    height:fit-content;
+    /* align-items:stretch; */
+}
+
+.div1{
+    /* background-color:aqua; */
+
+    max-width:60%;
+    height:fit-content;
+    /* align-self: stretch; */
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    /* align-items: stretch; */
+    flex-grow: 1;
+
+}
+
+.div2{
+    /* background-color:bisque; */
+    height:fit-content;
+    /* width:fit-content; */
+    flex-grow: 1;
+
+    display:flex;
+    
+}
+
+p{
+    /* background-color:#3a3a3a; */
+    /* height:70%; */
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+#presentation{
+    font-size: calc(100% - 1px);
+}
+
+div{
+    padding:10px;
+}
+
+@media (max-width:700px){
+
+    body{
+        background-color:aqua;
+    }
+
+    /* cac passage en flex-wrap: ; */
+
+    .cac{
+        flex-wrap:wrap;
+    }
+
+    /* adaptation de la taille des caractéres */
+  
+    body{
+        font-size: 1rem;
+        max-width: 95%;
+    }
+
+    /* passage de la partie permis etc dans présentation en colonne */
+
+    .div2{
+        flex-direction:column;
+    }
+
+    .div1{
+        max-width:100%;
+    }
+
+    section{
+        width:100%;
+    }
+
+    section{
+        padding:0px;
+    
+        margin:20px;
+    }
+    
+    
+    
+    #title{
+        font-size:1.5rem;
+        /* font-size: calc(100% - 1px); */
+    
+    }
+
+}
+
+/* info permis langue centrage contenant */
+
+.centragey{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+/* taille d'images */
+
+img{
+    height:50px;
+}
+
+/* img[src*="html"]{
+    width:100px;
+}
+
+img[src*="css"]{
+    width:73px;
+}
+
+img[src*="java"]{
+    width:80px;
+}
+
+img[src*="php"]{
+    width:130px;
+}
+
+img[src*="mysql"]{
+    width:200px;
+} */
+
+/* alignement des image et enroulement pour les petits écrans */
+
+.alignimg{
+    display:flex;
+    /* align-items:flex-start; */
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    /* padding:50px; */
+}
+
+ul{
+    background-color:#3a3a3a;
+}
+
+.alignimg li{
+    border:solid;
+    height:100%;
+    /* text-align: center; */
+}
+
+/* couleur de fond pour les section pour mieux les visualiser */
+
+section{
+    background-color:#c5bebe;
+}
+
+/* fond pour les div soussection */
+
+
+
+
+
+
+
+
+
