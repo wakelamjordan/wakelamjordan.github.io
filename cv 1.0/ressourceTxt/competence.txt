@@ -1,0 +1,8 @@
+Compétence
+(en cours d'apprentissage)
+
+HTML5.img
+CSS3.img
+javascript.img
+php.img
+sql.img
