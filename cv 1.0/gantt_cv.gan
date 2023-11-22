@@ -51,7 +51,7 @@
             </notes>
             <depend id="2" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="2" name="maquettage" color="#ffff00" meeting="false" start="2023-11-27" duration="3" complete="0" thirdDate="2023-11-22" thirdDate-constraint="0" expand="true">
+        <task id="2" name="maquettage" color="#ffff00" meeting="false" start="2023-11-27" duration="3" complete="16" thirdDate="2023-11-22" thirdDate-constraint="0" expand="true">
             <notes>
                 <![CDATA[maquettage sous figma, charte graphique (font color etc), si possible 2 maquette minimum et différentes]]>
             </notes>
