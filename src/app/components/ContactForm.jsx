@@ -46,7 +46,7 @@ function ContactForm() {
     setModalTitle(<span className="text-error">Une erreur est survenue</span>);
     setModalContent(
       <>
-        Vous pouvez me contacter à l'adresse suivante:{" "}
+        Vous pouvez me contacter à l&apos;adresse suivante:{" "}
         <a href="mailto:jwakelams@gmail.com">jwakelams@gmail.com</a>
       </>
     );

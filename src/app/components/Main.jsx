@@ -25,7 +25,7 @@ const Main = ({ listSocial }) => {
       title: "Site Mairie",
       link: "https://github.com/wakelamjordan/mairie",
       content:
-        "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+        "site web moderne pour une mairie, permettant aux citoyens d&apos;accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
       badgeList: [{ name: "php" }, { name: "js" }],
     },
     {
@@ -34,7 +34,7 @@ const Main = ({ listSocial }) => {
       title: "Site Mairie",
       link: "https://github.com/wakelamjordan/mairie",
       content:
-        "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+        "site web moderne pour une mairie, permettant aux citoyens d&apos;accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
       badgeList: [{ name: "php" }, { name: "js" }],
       empty: true,
     },
@@ -44,7 +44,7 @@ const Main = ({ listSocial }) => {
       title: "Site Mairie",
       link: "https://github.com/wakelamjordan/mairie",
       content:
-        "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+        "site web moderne pour une mairie, permettant aux citoyens d&apos;accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
       badgeList: [{ name: "php" }, { name: "js" }],
       empty: true,
     },
@@ -87,21 +87,21 @@ const Main = ({ listSocial }) => {
               {/* <h2 className="text-2xl md:me-5">
                 <nobr>orienté back-end</nobr>
               </h2> */}
-              <Badge>En recherche d'un poste!</Badge>
+              <Badge>En recherche d&apos;un poste!</Badge>
             </div>
             <p className="my-10">
               <span className="text-xl bg-info p-1 text-info-content rounded-lg">
                 Jordan Wakelam
               </span>{" "}
-              – Après 12 ans dans l'armée, où j'ai appris à résoudre des
-              problèmes sous pression {"("}parfois littéralement{")"}, j'ai
-              troqué l'uniforme pour le code. Aujourd'hui, en tant que
+              – Après 12 ans dans l&apos;armée, où j&apos;ai appris à résoudre des
+              problèmes sous pression {"("}parfois littéralement{")"}, j&apos;ai
+              troqué l&apos;uniforme pour le code. Aujourd&apos;hui, en tant que
               développeur{" "}
               <bold className="text-info-content bg-info rounded-lg p-1">
                 back-end
               </bold>
-              , j'apporte la même rigueur et détermination à chaque projet. À la
-              recherche d'une nouvelle mission, toujours prêt à coder !
+              , j&apos;apporte la même rigueur et détermination à chaque projet. À la
+              recherche d&apos;une nouvelle mission, toujours prêt à coder !
             </p>
             <a
               href="/file/cv_wakelam_jordan_dev.pdf"
