@@ -46,7 +46,7 @@ const Header = () => {
         <label
           htmlFor="my-drawer-3"
           aria-label="close sidebar"
-          className="drawer-overlay"
+          className="drawer-overlay h-screen"
         ></label>
         <ul className="menu bg-base-200 min-h-full w-80 p-4">
           {/* Sidebar content here */}

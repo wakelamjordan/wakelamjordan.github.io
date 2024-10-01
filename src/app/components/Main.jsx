@@ -7,83 +7,70 @@ import Framworks from "./Framworks";
 import Card from "./Card";
 import Image from "next/image";
 import principalPic from "../../img/original.jpg";
+import secondaryPic from "../../img/reverse.jpg";
 import GitHubCalendar from "react-github-calendar";
-import imageTest from "../../img/mairie.png";
+import imageProjetMairie from "../../img/mairie.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPhone,
+  faHouse,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
-const Main = () => {
-  const listSocial = [
-    {
-      href: "https://github.com",
-      title: "GitHub",
-      svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            fillRule="evenodd"
-            d="M12 2C6.48 2 2 6.48 2 12c0 4.41 2.87 8.16 6.84 9.49.5.09.66-.22.66-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.13-1.1-1.44-1.1-1.44-.9-.62.07-.6.07-.6 1 .07 1.54 1.03 1.54 1.03.88 1.51 2.31 1.08 2.88.82.09-.64.34-1.08.62-1.33-2.22-.25-4.56-1.12-4.56-4.98 0-1.1.39-2 .1-2.72 0 0 .83-.27 2.73 1.03.8-.23 1.66-.34 2.51-.34.85 0 1.71.12 2.51.34 1.89-1.3 2.72-1.03 2.72-1.03.72.73.1 1.63.1 2.72 0 3.87-2.35 4.73-4.58 4.98.35.31.65.92.65 1.86v2.75c0 .27.16.58.67.48A9.995 9.995 0 0 0 22 12c0-5.52-4.48-10-10-10z"
-            clipRule="evenodd"
-          />
-        </svg>
-      ),
-    },
-    {
-      href: "https://twitter.com",
-      title: "Twitter",
-      svg: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="w-6 h-6"
-        >
-          <path d="M23.44 4.84c-.81.36-1.69.61-2.61.72.94-.56 1.66-1.45 2-2.51-.88.52-1.86.9-2.9 1.1a4.51 4.51 0 0 0-7.69 4.11A12.82 12.82 0 0 1 1.67 3.15a4.48 4.48 0 0 0-.61 2.27c0 1.56.8 2.94 2.02 3.75a4.47 4.47 0 0 1-2.04-.56v.06c0 2.18 1.55 4 3.6 4.42-.38.1-.78.15-1.2.15-.29 0-.58-.03-.85-.09.58 1.8 2.26 3.12 4.26 3.16A9.06 9.06 0 0 1 1 18.08 12.75 12.75 0 0 0 6.92 20c8.3 0 12.84-6.88 12.84-12.84 0-.2-.01-.39-.02-.59.88-.64 1.64-1.45 2.24-2.37z" />
-        </svg>
-      ),
-    },
-  ];
+const Main = ({ listSocial }) => {
   const ListCard = [
     {
-      src: imageTest,
-      alt: "text alternatif",
-      title: "titre du projet",
-      link: "lien du projet",
+      src: imageProjetMairie,
+      alt: "Site Mairie",
+      title: "Site Mairie",
+      link: "https://github.com/wakelamjordan/mairie",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, consequatur.",
+        "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
       badgeList: [{ name: "php" }, { name: "js" }],
     },
     {
-      src: imageTest,
-      alt: "text alternatif",
-      title: "titre du projet",
-      link: "lien du projet",
+      src: imageProjetMairie,
+      alt: "Site Mairie",
+      title: "Site Mairie",
+      link: "https://github.com/wakelamjordan/mairie",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, consequatur.",
+        "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
       badgeList: [{ name: "php" }, { name: "js" }],
+      empty: true,
     },
     {
-      src: imageTest,
-      alt: "text alternatif",
-      title: "titre du projet",
-      link: "lien du projet",
+      src: imageProjetMairie,
+      alt: "Site Mairie",
+      title: "Site Mairie",
+      link: "https://github.com/wakelamjordan/mairie",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, consequatur.",
+        "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
       badgeList: [{ name: "php" }, { name: "js" }],
+      empty: true,
     },
   ];
+  let classTransition = [
+    "transition",
+    "duration-1000",
+    "ease-in-out",
+    "transform",
+  ].join(" ");
+
   return (
     <main>
       <Section>
         <div className="lg:grid grid-cols-2 lg:grid-cols-3 gap-16 lg:px-10">
           <div className="md:px-24 lg:px-0">
-            <div className="mask mask-squircle w-auto min-h-9">
+            <div className="mask mask-squircle w-auto min-h-9 group">
               <Image
                 src={principalPic}
                 alt="Portrait de Jordan Wakelam Développeur Web"
-                className="object-contain w-full h-full"
+                className={`object-contain w-full h-full group-hover:opacity-0 ${classTransition}`}
+              />
+              <Image
+                src={secondaryPic}
+                alt="Portrait de Jordan Wakelam Développeur Web"
+                className={`absolute inset-0 opacity-0 group-hover:opacity-100 ${classTransition}`}
               />
             </div>
           </div>
@@ -95,21 +82,34 @@ const Main = () => {
             />
           </div> */}
           <div className="col-span-2 flex flex-col justify-center my-5 lg:px-20s">
-            <h1 className="text-4xl">Développeur Web</h1>
             <div className="md:flex items-center">
-              <h2 className="text-2xl md:me-5">
+              <h1 className="text-4xl me-4">Développeur Web</h1>
+              {/* <h2 className="text-2xl md:me-5">
                 <nobr>orienté back-end</nobr>
-              </h2>
-              <Badge>Need Job!</Badge>
+              </h2> */}
+              <Badge>En recherche d'un poste!</Badge>
             </div>
             <p className="my-10">
-              <span className="text-xl bg-accent p-1 text-accent-content rounded">
+              <span className="text-xl bg-info p-1 text-info-content rounded-lg">
                 Jordan Wakelam
               </span>{" "}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-              autem suscipit voluptate libero veniam dolorem quam fugiat qui
-              odit rerum!
+              – Après 12 ans dans l'armée, où j'ai appris à résoudre des
+              problèmes sous pression {"("}parfois littéralement{")"}, j'ai
+              troqué l'uniforme pour le code. Aujourd'hui, en tant que
+              développeur{" "}
+              <bold className="text-info-content bg-info rounded-lg p-1">
+                back-end
+              </bold>
+              , j'apporte la même rigueur et détermination à chaque projet. À la
+              recherche d'une nouvelle mission, toujours prêt à coder !
             </p>
+            <a
+              href="/file/cv_wakelam_jordan_dev.pdf"
+              download="cv_wakelam_jordan_dev"
+              className="btn btn-secondary w-32 rounded-lg text-xl"
+            >
+              Mon cv
+            </a>
           </div>
         </div>
         <div>
@@ -119,14 +119,12 @@ const Main = () => {
       <Section title="My Stack">
         <div className="">
           <Languages />
+          <div className="divider"></div>
           <Framworks />
         </div>
       </Section>
       <Section title="Mes Projets">
-        <div className="flex justify-center my-10">
-          <GitHubCalendar username="wakelamjordan" year={"2024"} />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center gap-12">
           {ListCard.map((card, key) => (
             <Card
               src={card.src}
@@ -136,21 +134,57 @@ const Main = () => {
               content={card.content}
               badgeList={card.badgeList}
               key={key}
+              empty={card.empty}
             />
           ))}
         </div>
+
         <div className="text-center mt-9">
           <a href="#" className="btn btn-primary rounded-lg">
             Autres projets
           </a>
         </div>
+        {/* <div className="divider"></div>
+        <div className="flex justify-center my-10">
+          <GitHubCalendar username="wakelamjordan" year={"2024"} />
+        </div> */}
       </Section>
-      <Section title="Me contacter" additionalClass={["", ""]}>
+      <Section title="Me contacter">
         {/* <div className=""> */}
-        <div className="grid grid-cols-2 py-12">
+        <div className="md:grid grid-cols-2 py-12 gap-12" id="MeContacter">
           <ContactForm />
-          <div className="bg-primary">aa</div>
+          <div className="ms-12">
+            <ul className="list-disc">
+              <li className="my-5">
+                <a
+                  href="tel:+0641162313"
+                  className="flex gap-3"
+                  aria-label="Numéros de téléphone mobile"
+                >
+                  <FontAwesomeIcon icon={faPhone} className="w-5" /> 06 41 16 23
+                  13
+                </a>
+              </li>
+              <li className="my-5">
+                <span className="flex gap-3" aria-label="Ville de domicile">
+                  <FontAwesomeIcon icon={faHouse} className="w-5" />
+                  Étampes
+                </span>
+              </li>
+              <li className="my-5">
+                <a
+                  href="mailto:jwakelams@gmail.com"
+                  className="flex gap-3"
+                  aria-label="Adresse mail"
+                >
+                  <FontAwesomeIcon icon={faEnvelope} className="w-5" />
+                  jwakelams@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
         {/* </div> */}
       </Section>
     </main>

@@ -11,7 +11,7 @@ const Section = ({ children, additionalClass = [], title }) => {
   ].join(" ");
   return (
     <section className={listClass}>
-      {title ? <h2 className="text-center text-3xl">{title}</h2> : null}
+      {title ? <h2 className="text-center text-3xl mb-7">{title}</h2> : null}
       {children}
     </section>
   );
