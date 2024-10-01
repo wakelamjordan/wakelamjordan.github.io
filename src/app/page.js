@@ -9,9 +9,9 @@ export default function Home() {
     // </div>
     <div className="sm:container mx-auto">
       <div className="lg:mx-6">
-        <Header></Header>
-        <Main></Main>
-        <Footer></Footer>
+        <Header/>
+        <Main />
+        <Footer/>
       </div>
     </div>
   );

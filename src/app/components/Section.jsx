@@ -3,7 +3,7 @@ const Section = ({ children, additionalClass = [], title }) => {
     // "min-h-screen",
     "min-h-fit",
     "mt-0",
-    "bg-primary",
+    "bg-neutral",
     "my-6",
     "rounded-lg",
     "p-10",

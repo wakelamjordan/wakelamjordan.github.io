@@ -1,8 +1,8 @@
 import React from "react";
 
-const Badge = ({ children, badgeType = "warning" }) => {
+const Badge = ({ children }) => {
   return (
-    <div className={`badge badge-${badgeType} gap-2`}>
+    <div className={`badge badge-warning gap-2`}>
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
