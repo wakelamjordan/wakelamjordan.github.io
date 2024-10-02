@@ -6,16 +6,17 @@ import Languages from "./Languages";
 import Framworks from "./Framworks";
 import Card from "./Card";
 import Image from "next/image";
-import principalPic from "../../img/original.jpg";
-import secondaryPic from "../../img/reverse.jpg";
 import GitHubCalendar from "react-github-calendar";
-import imageProjetMairie from "../../img/mairie.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhone,
   faHouse,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+
+const secondaryPic = "/img/reverse.jpg";
+const principalPic = "/img/original.jpg";
+const imageProjetMairie = "/img/mairie.png";
 
 const Main = ({ listSocial }) => {
   const ListCard = [
@@ -66,11 +67,15 @@ const Main = ({ listSocial }) => {
                 src={principalPic}
                 alt="Portrait de Jordan Wakelam Développeur Web"
                 className={`object-contain w-full h-full group-hover:opacity-0 ${classTransition}`}
+                width={500}
+                height={500}
               />
               <Image
                 src={secondaryPic}
                 alt="Portrait de Jordan Wakelam Développeur Web"
                 className={`absolute inset-0 opacity-0 group-hover:opacity-100 ${classTransition}`}
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -93,15 +98,16 @@ const Main = ({ listSocial }) => {
               <span className="text-xl bg-info p-1 text-info-content rounded-lg">
                 Jordan Wakelam
               </span>{" "}
-              – Après 12 ans dans l&apos;armée, où j&apos;ai appris à résoudre des
-              problèmes sous pression {"("}parfois littéralement{")"}, j&apos;ai
-              troqué l&apos;uniforme pour le code. Aujourd&apos;hui, en tant que
-              développeur{" "}
+              – Après 12 ans dans l&apos;armée, où j&apos;ai appris à résoudre
+              des problèmes sous pression {"("}parfois littéralement{")"},
+              j&apos;ai troqué l&apos;uniforme pour le code. Aujourd&apos;hui,
+              en tant que développeur{" "}
               <bold className="text-info-content bg-info rounded-lg p-1">
                 back-end
               </bold>
-              , j&apos;apporte la même rigueur et détermination à chaque projet. À la
-              recherche d&apos;une nouvelle mission, toujours prêt à coder !
+              , j&apos;apporte la même rigueur et détermination à chaque projet.
+              À la recherche d&apos;une nouvelle mission, toujours prêt à coder
+              !
             </p>
             <a
               href="/file/cv_wakelam_jordan_dev.pdf"

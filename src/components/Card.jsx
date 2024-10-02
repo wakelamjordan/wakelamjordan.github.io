@@ -12,7 +12,7 @@ const Card = ({ src, alt, title, link, content, badgeList, key, empty }) => {
       ) : (
         <a href={link}>
           <figure>
-            <Image src={src} alt={alt} />
+            <Image src={src} alt={alt} width={500} height={500} />
           </figure>
           <div className="card-body">
             <h2 className="card-title">

@@ -1,13 +1,13 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "../styles/globals.css";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "../styles/fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  src: "../styles/fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -16,17 +16,17 @@ export const metadata = {
   title: "Jordan Wakelam Développeur Web orienté Back-end",
   description: "Porte folio Développeur Web Jordan Wakelam",
   icons: {
-    icon: "/favicon-32x32.png",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/favicon/favicon-32x32.png",
+    shortcut: "/favicon/favicon-16x16.png",
+    apple: "/favicon/apple-touch-icon.png",
     other: [
       {
         rel: "manifest",
-        url: "/site.webmanifest",
+        url: "/favicon/site.webmanifest",
       },
       {
         rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
+        url: "/favicon/safari-pinned-tab.svg",
         color: "#5bbad5",
       },
     ],
