@@ -1,5 +1,5 @@
 {
-  "masterPicture": "./src/img/logo.png",
+  "masterPicture": "./src/image/logo.png",
   "iconsPath": "/",
   "design": {
     "ios": {

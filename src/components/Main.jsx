@@ -14,9 +14,9 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
-const secondaryPic = "/img/reverse.jpg";
-const principalPic = "/img/original.jpg";
-const imageProjetMairie = "/img/mairie.png";
+const secondaryPic = "/image/reverse.jpg";
+const principalPic = "/image/original.jpg";
+const imageProjetMairie = "/image/mairie.png";
 
 const Main = ({ listSocial }) => {
   const ListCard = [
@@ -63,7 +63,7 @@ const Main = ({ listSocial }) => {
         <div className="lg:grid grid-cols-2 lg:grid-cols-3 gap-16 lg:px-10">
           <div className="md:px-24 lg:px-0">
             <div className="mask mask-squircle w-auto min-h-9 group">
-              <Image
+              <img
                 src={principalPic}
                 alt="Portrait de Jordan Wakelam Développeur Web"
                 className={`object-contain w-full h-full group-hover:opacity-0 ${classTransition}`}

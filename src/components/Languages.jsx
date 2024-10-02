@@ -1,6 +1,6 @@
 import Image from "next/image";
-const PhpPic = "/img/php-svgrepo-com.svg";
-const JavascriptPic = "/img/Unofficial_JavaScript_logo_2.svg";
+const PhpPic = "/image/php-svgrepo-com.svg";
+const JavascriptPic = "/image/Unofficial_JavaScript_logo_2.svg";
 
 const Languages = () => {
   const classList = ["w-auto", "h-32"].join(" ");

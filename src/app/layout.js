@@ -37,7 +37,7 @@ export const metadata = {
 };
 
 const fav = {
-  masterPicture: "../img/logo.png",
+  masterPicture: "../image/logo.png",
   iconsPath: "/",
   design: {
     ios: {

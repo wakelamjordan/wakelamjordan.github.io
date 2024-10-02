@@ -1,12 +1,12 @@
 import Image from "next/image";
-// import SymfonyPic from "/img/symfony_black_03.svg";
-// import ReactPic from "/img/React-icon.svg";
+// import SymfonyPic from "/image/symfony_black_03.svg";
+// import ReactPic from "/image/React-icon.svg";
 
-const SymfonyPic = "/img/symfony_black_03.svg";
-const ReactPic = "/img/React-icon.svg";
-const ApiPlateFormPic = "/img/Logo_Circle webby blue.svg";
-const BootstrapPic = "/img/Bootstrap_logo.svg";
-const TailwindPic = "/img/Tailwind_CSS_Logo.svg";
+const SymfonyPic = "/image/symfony_black_03.svg";
+const ReactPic = "/image/React-icon.svg";
+const ApiPlateFormPic = "/image/Logo_Circle webby blue.svg";
+const BootstrapPic = "/image/Bootstrap_logo.svg";
+const TailwindPic = "/image/Tailwind_CSS_Logo.svg";
 
 const Framworks = () => {
   const classList = ["w-auto", "h-20", "mx-auto"].join(" ");
