@@ -21,8 +21,13 @@ const Main = ({ listSocial }) => {
       alt: "Site Mairie",
       title: "Site Mairie",
       link: "https://github.com/wakelamjordan/mairie",
-      content:
-        "site web moderne pour une mairie, permettant aux citoyens d&apos;accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+      content: (
+        <>
+          site web moderne pour une mairie, permettant aux citoyens
+          d&apos;accéder aux services municipaux, aux actualités locales, et de
+          réaliser certaines démarches en ligne.
+        </>
+      ),
       badgeList: [{ name: "php" }, { name: "js" }],
     },
     {
@@ -30,8 +35,13 @@ const Main = ({ listSocial }) => {
       alt: "Site Mairie",
       title: "Site Mairie",
       link: "https://github.com/wakelamjordan/mairie",
-      content:
-        "site web moderne pour une mairie, permettant aux citoyens d&apos;accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+      content: (
+        <>
+          site web moderne pour une mairie, permettant aux citoyens
+          d&apos;accéder aux services municipaux, aux actualités locales, et de
+          réaliser certaines démarches en ligne.
+        </>
+      ),
       badgeList: [{ name: "php" }, { name: "js" }],
       empty: true,
     },
@@ -40,8 +50,13 @@ const Main = ({ listSocial }) => {
       alt: "Site Mairie",
       title: "Site Mairie",
       link: "https://github.com/wakelamjordan/mairie",
-      content:
-        "site web moderne pour une mairie, permettant aux citoyens d&apos;accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+      content: (
+        <>
+          site web moderne pour une mairie, permettant aux citoyens
+          d&apos;accéder aux services municipaux, aux actualités locales, et de
+          réaliser certaines démarches en ligne.
+        </>
+      ),
       badgeList: [{ name: "php" }, { name: "js" }],
       empty: true,
     },
