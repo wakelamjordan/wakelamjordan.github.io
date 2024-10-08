@@ -61,7 +61,7 @@ const Main = ({ listSocial, listCard, section1 }) => {
           <SocialLinks listSocial={listSocial} />
         </div>
       </Section>
-      <Section title="My Stack">
+      <Section title="Mes Compétences">
         <div className="">
           <Languages />
           <div className="divider"></div>
@@ -98,10 +98,10 @@ const Main = ({ listSocial, listCard, section1 }) => {
           <GitHubCalendar username="wakelamjordan" year={"2024"} />
         </div> */}
       </Section>
-      <Section title="Me contacter">
+      <Section title="Me contacter" additionalClass={["p-0", "md:p-10"]}>
         {/* <div className=""> */}
         <div className="md:grid grid-cols-2 py-12 gap-12" id="MeContacter">
-          <ContactForm />
+          <ContactForm email={section1.email} />
           <div className="ms-12">
             <ul className="list-disc">
               <li className="my-5">
@@ -123,13 +123,10 @@ const Main = ({ listSocial, listCard, section1 }) => {
               <li className="my-5">
                 <a
                   href={`mailto:${section1.email}`}
-                  className="flex gap-3"
+                  className="flex gap-3 link link-hover"
                   aria-label="Adresse mail"
                 >
-                  <FontAwesomeIcon
-                    icon={"fa-solid fa-at"}
-                    className="w-5"
-                  />
+                  <FontAwesomeIcon icon={"fa-solid fa-at"} className="w-5" />
                   {section1.email}
                 </a>
               </li>
