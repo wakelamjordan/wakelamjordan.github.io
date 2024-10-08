@@ -102,6 +102,7 @@ const Main = ({ listSocial, listCard, section1 }) => {
         {/* <div className=""> */}
         <div className="md:grid grid-cols-2 py-12 gap-12" id="MeContacter">
           <ContactForm email={section1.email} />
+          <ContactForm email={section1.email} />
           <div className="ms-12">
             <ul className="list-disc">
               <li className="my-5">
@@ -124,8 +125,10 @@ const Main = ({ listSocial, listCard, section1 }) => {
                 <a
                   href={`mailto:${section1.email}`}
                   className="flex gap-3 link link-hover"
+                  className="flex gap-3 link link-hover"
                   aria-label="Adresse mail"
                 >
+                  <FontAwesomeIcon icon={"fa-solid fa-at"} className="w-5" />
                   <FontAwesomeIcon icon={"fa-solid fa-at"} className="w-5" />
                   {section1.email}
                 </a>
