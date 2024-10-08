@@ -8,6 +8,7 @@ const SocialLinks = ({ listSocial }) => {
     "will-change-transform",
     "w-full",
     "hover:scale-125",
+    "text-center",
   ].join(" ");
   return (
     <nav className="my-10">

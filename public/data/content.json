@@ -1,0 +1,69 @@
+{
+  "section1": {
+    "title": "Développeur Web",
+    "badge": "En recherche d'un poste!",
+    "altFirstImageAvatar": "Portrait de Jordan Wakelam Développeur Web",
+    "altSecondImageAvatar": "Portrait de militaire",
+    "fullName": "Jordan Wakelam",
+    "textIntro": "<p class='my-10'><span class='text-xl bg-info p-1 text-info-content rounded-lg'>Jordan Wakelam</span>– Après 12 ans dans l'armée, où j'ai appris à résoudre des problèmes sous pression (parfois littéralement), j'ai troqué l'uniforme pour le code. Aujourd'hui,en tant que développeur <strong class='text-info-content bg-info rounded-lg p-1'>back-end</strong>, j'apporte la même rigueur et détermination à chaque projet. À la recherche d'une nouvelle mission, toujours prêt à coder!</p>",
+    "phoneNumber": "06 41 16 23 13",
+    "location": "Étampes",
+    "email": "jwakelams@gmail.com"
+  },
+  "listSocial": [
+    {
+      "href": "https://github.com/wakelamjordan",
+      "ariaLabel": "lien profil GitHub",
+      "icon": "fa-brands fa-github"
+    },
+    {
+      "icon": "fa-brands fa-linkedin",
+      "href": "https://www.linkedin.com/in/jordan-wakelam-350a24241",
+      "ariaLabel": "Lien Profil Linkedin"
+    },
+    {
+      "icon": "fa-brands fa-skype",
+      "href": "https://join.skype.com/invite/FbzCKQwUAiYx",
+      "ariaLabel": "Lien de contacte Skype"
+    },
+    {
+      "icon": "fa-solid fa-envelope",
+      "href": "#MeContacter",
+      "ariaLabel": "Lien Profil GitHub a faire",
+      "target": "_self"
+    },
+    {
+      "icon": "fa-solid fa-at",
+      "href": "mailto:jwakelams@gmail.com",
+      "ariaLabel": "M'envoyer un email"
+    }
+  ],
+  "listCard": [
+    {
+      "src": "/img/mairie.png",
+      "alt": "Site Mairie",
+      "title": "Site Mairie",
+      "link": "https://github.com/wakelamjordan/mairie",
+      "content": "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+      "badgeList": [{ "name": "php" }, { "name": "js" }]
+    },
+    {
+      "src": "/img/mairie.png",
+      "alt": "Site Mairie",
+      "title": "Site Mairie",
+      "link": "https://github.com/wakelamjordan/mairie",
+      "content": "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+      "badgeList": [{ "name": "php" }, { "name": "js" }],
+      "empty": true
+    },
+    {
+      "src": "/img/mairie.png",
+      "alt": "Site Mairie",
+      "title": "Site Mairie",
+      "link": "https://github.com/wakelamjordan/mairie",
+      "content": "site web moderne pour une mairie, permettant aux citoyens d'accéder aux services municipaux, aux actualités locales, et de réaliser certaines démarches en ligne.",
+      "badgeList": [{ "name": "php" }, { "name": "js" }],
+      "empty": true
+    }
+  ]
+}

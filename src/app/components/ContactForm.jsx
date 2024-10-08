@@ -1,9 +1,9 @@
 "use client";
 
-import {
-  faCheck,
-  faCircleExclamation,
-} from "@fortawesome/free-solid-svg-icons";
+// import {
+//   faCheck,
+//   faCircleExclamation,
+// } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
@@ -35,7 +35,7 @@ function ContactForm() {
     // alert("Message envoyé avec succès !");
     setLoading(false);
     setSendButtonMessage(
-      <FontAwesomeIcon icon={faCheck} className="text-success text-4xl" />
+      <FontAwesomeIcon icon="fa-solid fa-check" className="text-success text-4xl" />
     );
     setDisabled(true);
     // modal.showModal();
@@ -53,7 +53,7 @@ function ContactForm() {
 
     setSendButtonMessage(
       <FontAwesomeIcon
-        icon={faCircleExclamation}
+        icon='fa-solid fa-exclamation'
         className="text-error text-4xl"
       />
     );

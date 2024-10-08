@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import icon from "/favicon/favicon-32x32.png";
 import Image from "next/image";
 const Footer = ({ listSocial }) => {
-  console.log(listSocial);
+  // console.log(listSocial);
   return (
     <footer className="footer bg-neutral text-neutral-content items-center p-4 rounded-t-lg">
       <aside className="grid-flow-col items-center">
@@ -27,7 +26,7 @@ const Footer = ({ listSocial }) => {
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>
       {/* <SocialLinks listSocial={listSocial} /> */}
-      <nav className="grid-cols-2 md:grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <nav className="mx-auto grid-cols-2 md:mx-0 md:grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         {listSocial.map((item, key) => (
           <a
             className="mx-5"

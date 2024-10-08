@@ -1,16 +1,16 @@
 import Image from "next/image";
-const Card = ({ src, alt, title, link, content, badgeList, key, empty }) => {
+const Card = ({ src, alt, title, link, content, badgeList, empty }) => {
   return (
     <div
       className={`card bg-primary rounded-t-lg h-full w-full rounded overflow-hidden shadow-lg${
         !empty ? " hover:scale-105 hover:shadow-2xl " : null
       }transition-transform duration-300`}
-      key={key}
+      // key={key}
     >
       {empty ? (
         <div className="bg-base-200 absolute h-full w-full"></div>
       ) : (
-        <a href={link}>
+        <a href={link} target="_blank">
           <figure>
             <Image src={src} alt={alt} width={500} height={500} className="w-full"/>
           </figure>
