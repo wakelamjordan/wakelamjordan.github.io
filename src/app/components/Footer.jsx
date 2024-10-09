@@ -38,7 +38,7 @@ const Footer = ({ listSocial }) => {
           >
             <FontAwesomeIcon
               icon={item.icon}
-              className="text-primary w-12 h-12 mx-auto"
+              className="link-hover w-12 h-12 mx-auto"
             />
           </a>
         ))}

@@ -35,7 +35,7 @@ export default function Home() {
           <Main
             listSocial={content.listSocial}
             listCard={content.listCard}
-            section1={content.section1}
+            sectionData={content.sectionData}
           />
           <Footer listSocial={content.listSocial} />
         </div>

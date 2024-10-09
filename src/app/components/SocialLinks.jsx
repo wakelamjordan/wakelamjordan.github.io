@@ -11,24 +11,21 @@ const SocialLinks = ({ listSocial }) => {
     "text-center",
   ].join(" ");
   return (
-    <nav className="my-10">
-      <div className="grid grid-cols-2s md:grid-cols-none grid-flow-col gap-2 md:gap-4 justify-items-center">
-        {listSocial.map((item, key) => (
-          <a
-            className={classTransition}
-            key={key}
-            target={item.target ? item.target : "_blank"}
-            rel="noopener noreferrer"
-            aria-label={item.ariaLabel}
-            href={item.href}
-          >
-            <FontAwesomeIcon
-              icon={item.icon}
-              className="text-primary w-12 h-12 mx-autos"
-            />
-          </a>
-        ))}
-      </div>
+    <nav className="flex justify-between mt-11 md:mx-10">
+      {/* <div className="bg-black"> */}
+      {listSocial.map((item, key) => (
+        <a
+          className={classTransition}
+          key={key}
+          target={item.target ? item.target : "_blank"}
+          rel="noopener noreferrer"
+          aria-label={item.ariaLabel}
+          href={item.href}
+        >
+          <FontAwesomeIcon icon={item.icon} className="link-hover text-4xl md:text-6xl" />
+        </a>
+      ))}
+      {/* </div> */}
     </nav>
   );
 };

@@ -5,53 +5,28 @@ import ContactForm from "./ContactForm";
 import Languages from "./Languages";
 import Framworks from "./Framworks";
 import Card from "./Card";
-import Image from "next/image";
+import Avatar from "./Avatar";
 // import GitHubCalendar from "react-github-calendar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Main = ({ listSocial, listCard, section1 }) => {
-  let classTransition = [
-    "transition",
-    "duration-1000",
-    "ease-in-out",
-    "transform",
-  ].join(" ");
-
-  // const textIntro = section1.textIntro;
+const Main = ({ listSocial, listCard, sectionData }) => {
+  // const textIntro = sectionData.textIntro;
 
   return (
     <main>
-      <Section>
-        <div className="lg:grid grid-cols-2 lg:grid-cols-3 gap-16 lg:px-10">
-          <div className="md:px-24 lg:px-0">
-            <div className="mask mask-squircle w-auto min-h-9 group">
-              <Image
-                src="/img/original.jpg"
-                alt={section1.altFirstImageAvatar}
-                className={`object-contain w-full h-full group-hover:opacity-0 ${classTransition}`}
-                width={500}
-                height={500}
-                priority
-              />
-              <Image
-                src="/img/reverse.jpg"
-                alt={section1.altSecondImageAvatar}
-                className={`absolute inset-0 opacity-0 group-hover:opacity-100 ${classTransition}`}
-                width={500}
-                height={500}
-              />
+      <Section additionalClass={["px-0"]}>
+        <div className="grid lg:grid-cols-3 gap-8 px-10 items-center">
+          <Avatar sectionData={sectionData} />
+          <div className="lg:col-span-2">
+            <div className="">
+              <h1 className="text-4xl">{sectionData.title}</h1>
+              {sectionData.badge ? <Badge>{sectionData.badge}</Badge> : null}
             </div>
-          </div>
-          <div className="col-span-2 flex flex-col justify-center my-5 lg:px-20s">
-            <div className="md:flex items-center">
-              <h1 className="text-4xl me-4">{section1.title}</h1>
-              {section1.badge ? <Badge>{section1.badge}</Badge> : null}
-            </div>
-            <div dangerouslySetInnerHTML={{ __html: section1.textIntro }} />
+            <div dangerouslySetInnerHTML={{ __html: sectionData.textIntro }} />
             <a
               href="/file/cv_wakelam_jordan_dev.pdf"
               download="cv_wakelam_jordan_dev"
-              className="btn btn-secondary w-32 rounded-lg text-xl"
+              className="btn btn-secondary w-full md:w-1/2 lg:w-1/3 rounded-lg text-xl"
             >
               Mon cv
             </a>
@@ -101,33 +76,33 @@ const Main = ({ listSocial, listCard, section1 }) => {
       <Section title="Me contacter" additionalClass={["p-0", "md:p-10"]}>
         {/* <div className=""> */}
         <div className="md:grid grid-cols-2 md:py-12 gap-12" id="MeContacter">
-          <ContactForm email={section1.email} />
+          <ContactForm email={sectionData.email} />
           <div className="ms-12">
             <ul className="list-disc">
-              <li className="my-5">
+              <li className="my-5 md:text-xl lg:text-2xl">
                 <a
-                  href={`tel:+${section1.phoneNumber.replace(/\s/g, "")}`}
-                  className="flex gap-3"
+                  href={`tel:+${sectionData.phoneNumber.replace(/\s/g, "")}`}
+                  className="flex gap-3 link-hover"
                   aria-label="Numéros de téléphone mobile"
                 >
-                  <FontAwesomeIcon icon={"fa-solid fa-phone"} className="w-5" />{" "}
-                  {section1.phoneNumber}
+                  <FontAwesomeIcon icon={"fa-solid fa-phone"} className="" />{" "}
+                  {sectionData.phoneNumber}
                 </a>
               </li>
-              <li className="my-5">
+              <li className="my-5 md:text-xl lg:text-2xl">
                 <span className="flex gap-3" aria-label="Ville de domicile">
-                  <FontAwesomeIcon icon={"fa-solid fa-house"} className="w-5" />
-                  {section1.location}
+                  <FontAwesomeIcon icon={"fa-solid fa-house"} className="" />
+                  {sectionData.location}
                 </span>
               </li>
-              <li className="my-5">
+              <li className="my-5 md:text-xl lg:text-2xl">
                 <a
-                  href={`mailto:${section1.email}`}
+                  href={`mailto:${sectionData.email}`}
                   className="flex gap-3 link link-hover"
                   aria-label="Adresse mail"
                 >
-                  <FontAwesomeIcon icon={"fa-solid fa-at"} className="w-5" />
-                  {section1.email}
+                  <FontAwesomeIcon icon={"fa-solid fa-at"} className="" />
+                  {sectionData.email}
                 </a>
               </li>
             </ul>
