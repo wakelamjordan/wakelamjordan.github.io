@@ -3,7 +3,7 @@ import Image from "next/image";
 const Languages = () => {
   const classList = ["w-auto", "h-32"].join(" ");
   return (
-    <ul className="flex justify-around mt-6 border sm:border-none px-5 rounded-lg">
+    <ul className="flex justify-around mt-6 border sm:border-none p-5 rounded-lg">
       <li>
         <Image
           src="/img/php-svgrepo-com.svg"

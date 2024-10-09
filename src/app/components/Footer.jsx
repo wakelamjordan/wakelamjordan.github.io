@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer = ({ listSocial }) => {
   // console.log(listSocial);
   return (
-    <footer className="footer bg-neutral text-neutral-content items-center p-4 rounded-t-lg">
+    <footer className="footer bg-neutral text-neutral-content items-center p-4 rounded-t-lg flex flex-col-reverse md:flex-row justify-between">
       <aside className="grid-flow-col items-center">
         {/* <svg
           width="36"
@@ -26,10 +26,10 @@ const Footer = ({ listSocial }) => {
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>
       {/* <SocialLinks listSocial={listSocial} /> */}
-      <nav className="mx-auto grid-cols-2 md:mx-0 md:grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <nav className="mx-0 grid-flow-col gap-4 place-self-center md:justify-self-end">
         {listSocial.map((item, key) => (
           <a
-            className="mx-5"
+            className="md:mx-5"
             key={key}
             target={item.target ? item.target : "_blank"}
             rel="noopener noreferrer"
